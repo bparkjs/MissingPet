@@ -5,9 +5,8 @@
  <footer> 
  <hr>
  <div id="copy">
- All contents Copyright 2013 Nonage Inc. all rights reserved<br>
- Contact mail : Nonage@Nonage.com Tel: +82 64 123 4315 
- Fax +82 64 123 4321
+ 이현우 EZEN 상봉 최종 프로젝트<br>
+ Contact mail : bpjs15@naver.com Tel: 010 8739 0804 
  </div> 
  </footer>
  <!--풋터 들어가는 곳 끝 --> 
