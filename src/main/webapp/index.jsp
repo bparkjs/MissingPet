@@ -9,7 +9,7 @@
 <div class="clear"></div>
 
 <div id="front">
-	<h2>New Item</h2>
+	<h2>New</h2>
 	<div id="bestProduct">
 		<c:forEach items="${newProductList }" var="productVO">
 			<div id="item">
@@ -24,7 +24,7 @@
 	</div>
 	<div class="clear"></div>
 
-	<h2>Best Item</h2>
+	<h2>Most</h2>
 	<div id="bestProduct">
 		<c:forEach items="${bestProductList}" var="productVO">
 			<div id="item">

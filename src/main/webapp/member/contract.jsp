@@ -4,7 +4,7 @@
 <%@ include file="sub_img.html"%> 
 <%@ include file="sub_menu.html" %>   
   <article>
-    <h2>Join Us</h2>
+    <h2>이용 약관</h2>
     <form id="join" action="MissingServlet?command=join_form" 
 method="post" name="formm">
         언제나 새로운 즐거움이 가득한 Missing의 회원가입 페이지 입니다. <br>

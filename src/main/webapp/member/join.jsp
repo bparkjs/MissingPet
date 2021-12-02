@@ -4,11 +4,11 @@
 <%@ include file="sub_img.html"%> 
 <%@ include file="sub_menu.html" %>   
   <article>
-    <h2>Join Us</h2>
+    <h2>회원가입</h2>
     <form id="join" action="MissingServlet?command=join" method="post" name="formm">
       <fieldset>
-        <legend>Basic Info</legend>
-        <label>User ID</label>
+        <legend>가입 양식</legend>
+        <label>ID</label>
         <input type="text"      name="id"        size="12"  >
         <input type="hidden"    name="reid">
         <input type="button"    value="중복 체크"  class="dup" onclick="idcheck()"><br>
@@ -16,21 +16,21 @@
         <input type="password"  name="pwd"><br> 
         <label>Retype Password</label> 
         <input type="password"  name="pwdCheck"><br> 
-        <label>Name</label>
+        <label>이름</label>
         <input type="text"      name="name"><br> 
         <label>E-Mail</label>
         <input type="text"      name="email"><br>
         
-      </fieldset>
+      <%--</fieldset>
       <fieldset>
-        <legend>Optional</legend>
-        <label>Zip Code</label> 
+        <legend>Optional</legend>--%>
+        <label>우편 번호</label> 
         <input type="text"       name="zipNum"   size="10" >      
         <input type="button"     value="주소 찾기" class="dup" onclick="post_zip()"><br>
-        <label>Address</label> 
+        <label>주소</label> 
         <input type="text"        name="addr1"   size="50">
         <input type="text"        name="addr2"   size="25"> <br>
-        <label>Phone Number</label> 
+        <label>전화번호</label> 
         <input  type="text"       name="phone"><br>
       </fieldset>
       <div class="clear"></div>

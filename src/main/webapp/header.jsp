@@ -19,7 +19,7 @@
 			<!--로고 들어가는 곳 시작--->
 			<div id="logo">
 				<a href="MissingServlet?command=index"> <img
-					src="images/logo.gif" width="180" height="100" alt="Missingshop">
+					src="images/logo.gif" width="180" height="100" alt="Missing pet">
 				</a>
 			</div>
 			<!--로고 들어가는 곳 끝-->
@@ -27,38 +27,38 @@
 				<ul>
 					<c:choose>
 						<c:when test="${empty sessionScope.loginUser}">
-							<li><a href="MissingServlet?command=login_form">LOGIN</a></li>
+							<li><a href="MissingServlet?command=login_form">로그인</a></li>
 							<li>/</li>
-							<li><a href="MissingServlet?command=contract">JOIN</a></li>
+							<li><a href="MissingServlet?command=contract">회원가입</a></li>
 						</c:when>
 						<c:otherwise>
 							<li style="color: orange">
 								${sessionScope.loginUser.name}(${sessionScope.loginUser.id})</li>
-							<li><a href="MissingServlet?command=logout">LOGOUT</a></li>
+							<li><a href="MissingServlet?command=logout">로그아웃</a></li>
 						</c:otherwise>
 					</c:choose>
 					<li>/</li>
-					<li><a href="MissingServlet?command=cart_list">CART</a></li>
+					<li><a href="MissingServlet?command=cart_list">즐겨찾기</a></li>
 					<li>/</li>
-					<li><a href="MissingServlet?command=mypage">MY PAGE</a></li>
+					<%--<li><a href="MissingServlet?command=mypage">MY PAGE</a></li>
 					<li>/</li>
 					<li><a href="MissingServlet?command=qna_list">Q&amp;A(1:1)</a>
-					</li>
+					</li>--%>
 				</ul>
 			</nav>
 
 			<nav id="top_menu">
 				<ul>
-					<li><a href="MissingServlet?command=catagory&kind=1">Heels</a>
+					<li><a href="MissingServlet?command=catagory&kind=1">강아지</a>
 					</li>
-					<li><a href="MissingServlet?command=catagory&kind=2">Boots</a>
+					<li><a href="MissingServlet?command=catagory&kind=2">고양이</a>
 					</li>
-					<li><a href="MissingServlet?command=catagory&kind=3">Sandals</a>
+					<%-- <li><a href="MissingServlet?command=catagory&kind=3">Sandals</a>
 					</li>
 					<li><a href="MissingServlet?command=catagory&kind=4">Sneakers</a>
 					</li>
 					<li><a href="MissingServlet?command=catagory&kind=5">On
-							Sale</a></li>
+							Sale</a></li>--%>
 				</ul>
 			</nav>
 			<div class="clear"></div>
