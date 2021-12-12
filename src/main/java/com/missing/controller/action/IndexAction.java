@@ -7,8 +7,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//import com.missing.dao.ProductDAO;
-//import com.missing.dto.ProductVO;
+import com.missing.dao.PetDAO;
+import com.missing.dto.PetVO;
 
 public class IndexAction implements Action {
 
@@ -17,12 +17,12 @@ public class IndexAction implements Action {
       throws ServletException, IOException {    
     String url = "/index.jsp";
     
-    //ProductDAO productDAO=ProductDAO.getInstance();
-    //ArrayList<ProductVO> newProductList = productDAO.listNewProduct();
-    //ArrayList<ProductVO> bestProductList = productDAO.listBestProduct();
+    PetDAO PetDAO=com.missing.dao.PetDAO.getInstance();
+    ArrayList<PetVO> newPetList = PetDAO.listNewPet();
+    ArrayList<PetVO> bestPetList = PetDAO.listBestPet();
     
-    //request.setAttribute("newProductList", newProductList);
-    //request.setAttribute("bestProductList", bestProductList);
+    request.setAttribute("newPetList", newPetList);
+    request.setAttribute("bestPetList", bestPetList);
     
     RequestDispatcher dispatcher = request.getRequestDispatcher(url);
     dispatcher.forward(request, response);

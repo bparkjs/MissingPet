@@ -35,6 +35,14 @@ public class ActionFactory {
 			 action = new IndexAction();
 		 }else if (command.equals("logout")) {
 			 action = new LogoutAction();
+		 }else if (command.equals("pet_detail")) {
+			 action = new PetDetailAction();
+		 } else if (command.equals("pet_write_form")) {
+			 action = new PetWriteFormAction();
+		 }else if (command.equals("pet_list")) {
+			 action = new PetListAction();
+		 }else if (command.equals("pet_write")) {
+			 action = new PetWriteAction();
 		 }
 		// 중복되는
 		return action;

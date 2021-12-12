@@ -10,14 +10,14 @@
 
 <div id="front">
 	<h2>New</h2>
-	<div id="bestProduct">
-		<c:forEach items="${newProductList }" var="productVO">
+	<div id="bestPet">
+		<c:forEach items="${newPetList }" var="PetVO">
 			<div id="item">
 				<a
-					href="MissingServlet?command=product_detail&pseq=${productVO.pseq}">
-					<img src="product_images/${productVO.image}" />
-					<h3>${productVO.name}</h3>
-					<p>${productVO.price2}</p>
+					href="MissingServlet?command=Pet_detail&pseq=${PetVO.pseq}">
+					<img src="Pet_images/${PetVO.image}" />
+					<h3>${PetVO.title}</h3>
+					<p>${PetVO.price}</p>
 				</a>
 			</div>
 		</c:forEach>
@@ -25,14 +25,14 @@
 	<div class="clear"></div>
 
 	<h2>Most</h2>
-	<div id="bestProduct">
-		<c:forEach items="${bestProductList}" var="productVO">
+	<div id="bestPet">
+		<c:forEach items="${bestPetList}" var="PetVO">
 			<div id="item">
 				<a
-					href="MissingServlet?command=product_detail&pseq=${productVO.pseq}">
-					<img src="product_images/${productVO.image}" />
-					<h3>${productVO.name}</h3>
-					<p>${productVO.price2}</p>
+					href="MissingServlet?command=Pet_detail&pseq=${PetVO.pseq}">
+					<img src="Pet_images/${PetVO.image}" />
+					<h3>${PetVO.title}</h3>
+					<p>${PetVO.price}</p>
 				</a>
 			</div>
 		</c:forEach>

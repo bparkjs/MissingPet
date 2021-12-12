@@ -40,6 +40,9 @@
 					<li>/</li>
 					<li><a href="MissingServlet?command=cart_list">즐겨찾기</a></li>
 					<li>/</li>
+					<li>/</li>
+					<li><a href="MissingServlet?command=pet_list">펫리스트</a></li>
+					<li>/</li>
 					<%--<li><a href="MissingServlet?command=mypage">MY PAGE</a></li>
 					<li>/</li>
 					<li><a href="MissingServlet?command=qna_list">Q&amp;A(1:1)</a>
